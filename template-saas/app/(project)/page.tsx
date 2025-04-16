@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+// SEO metadata
+export const metadata: Metadata = {
+  title: "Template SaaS",
+  description: "Landing Page"
+}
 
 export default function Home() {
   return (
