@@ -13,6 +13,7 @@ export async function POST(req: NextRequest) {
                 external_reference: testeId, // impacta na pontuacao do mercado pago
                 metadata: {
                     testeId, // convertida para snake_case no webhook
+                    userEmail,
                 },
                 ...(userEmail && { payer: { email: userEmail } }),
                 items: [
